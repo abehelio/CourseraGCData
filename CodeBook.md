@@ -14,36 +14,36 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Files:
 
-'README.txt'
-'features_info.txt': Shows information about the variables used on the feature vector.
-'features.txt': List of all features.
-'activity_labels.txt': Links the class labels with their activity name.
-'train/X_train.txt': Training set.
-'train/y_train.txt': Training labels.
-'test/X_test.txt': Test set.
-'test/y_test.txt': Test labels.
-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
-'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
-'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+- 'README.txt'
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ##Variables
 
-testData - read table from test/X_test.txt
-testSubject - read table from test/subject_test.txt
-testLabel - read table from test/y_test.txt
+- testData - read table from test/X_test.txt
+- testSubject - read table from test/subject_test.txt
+- testLabel - read table from test/y_test.txt
 
-trainData - read table from train/X_train.txt
-trainSubject - read table from test/subject_train.txt
-trainLabel - read table from train/y_train.txt
+- trainData - read table from train/X_train.txt
+- trainSubject - read table from test/subject_train.txt
+- trainLabel - read table from train/y_train.txt
 
-XTotal - merging of testData and trainData
-SubjectTotal - merging of testSuject and trainSubject
-YTotal - merging of testLabel and trainLabel
+- XTotal - merging of testData and trainData
+- SubjectTotal - merging of testSuject and trainSubject
+- YTotal - merging of testLabel and trainLabel
 
-featuresnames - Names of columns features.txt
-columns - logical vector of columns to use that have 'mean' or 'std'
-activities - content from activity_labels.txt
-totalData - final merging ot SubjectTotal, YTotal and XTotal
+- featuresnames - Names of columns features.txt
+- columns - logical vector of columns to use that have 'mean' or 'std'
+- activities - content from activity_labels.txt
+- totalData - final merging ot SubjectTotal, YTotal and XTotal
 
-tidy - aggregate of average of each variable for each activity and each subject
+- tidy - aggregate of average of each variable for each activity and each subject

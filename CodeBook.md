@@ -47,3 +47,12 @@ Files:
 - totalData - final merging ot SubjectTotal, YTotal and XTotal
 
 - tidy - aggregate of average of each variable for each activity and each subject
+
+##Transformation
+
+1) Merges all train and test datasets
+2) Name SujectTotal as 'Subjects' and YTotal as 'Activities'
+3) From names of XTotal, remove parenthesis signs as they are not human readable
+4) Substitute activities codes with activities human readable names from activity_labels.txt
+5) Column bind SubjectTotal, YTotal and XTotal
+6) Aggregate of average of each variable for each activity and each subject in variable tidy
